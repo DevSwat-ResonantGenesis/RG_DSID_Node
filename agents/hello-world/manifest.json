@@ -1,0 +1,27 @@
+{
+  "id": "hello-world",
+  "name": "Hello World Agent",
+  "version": "1.0.0",
+  "description": "A simple greeting agent that demonstrates basic agent functionality",
+  "author": "ResonantGenesis",
+  "category": "utility",
+  "tags": ["demo", "greeting", "starter"],
+  "capabilities": ["text-generation"],
+  "pricing": {
+    "credits_per_run": 10
+  },
+  "inputs": {
+    "name": {
+      "type": "string",
+      "description": "Name to greet",
+      "required": false,
+      "default": "World"
+    }
+  },
+  "outputs": {
+    "greeting": {
+      "type": "string",
+      "description": "The greeting message"
+    }
+  }
+}

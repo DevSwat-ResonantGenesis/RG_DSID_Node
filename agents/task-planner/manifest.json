@@ -1,0 +1,31 @@
+{
+  "id": "task-planner",
+  "name": "Task Planner",
+  "version": "1.0.0",
+  "description": "Breaks down complex tasks into actionable steps with priorities",
+  "author": "ResonantGenesis",
+  "category": "productivity",
+  "tags": ["planning", "tasks", "productivity"],
+  "capabilities": ["text-generation", "reasoning"],
+  "pricing": {
+    "credits_per_run": 25
+  },
+  "inputs": {
+    "task": {
+      "type": "string",
+      "description": "Task or goal to plan",
+      "required": true
+    },
+    "context": {
+      "type": "string",
+      "description": "Additional context",
+      "required": false
+    }
+  },
+  "outputs": {
+    "plan": {
+      "type": "array",
+      "description": "List of planned steps"
+    }
+  }
+}

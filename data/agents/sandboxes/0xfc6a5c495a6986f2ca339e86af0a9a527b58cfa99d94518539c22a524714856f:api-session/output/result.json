@@ -1,0 +1,1 @@
+{"success": true, "output": {"type": "info", "message": "I can analyze code for you. Send me a code snippet with 'analyze' or paste code directly.", "suggestions": ["Send code wrapped in ```python ... ```", "Ask 'what security issues do you check for?'", "Ask 'what complexity metrics do you use?'"]}}

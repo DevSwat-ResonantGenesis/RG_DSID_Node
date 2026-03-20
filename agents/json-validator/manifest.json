@@ -1,0 +1,35 @@
+{
+  "id": "json-validator",
+  "name": "JSON Validator",
+  "version": "1.0.0",
+  "description": "Validates JSON data against schemas and checks for common issues",
+  "author": "ResonantGenesis",
+  "category": "utility",
+  "tags": ["json", "validation", "schema"],
+  "capabilities": ["data-validation"],
+  "pricing": {
+    "credits_per_run": 5
+  },
+  "inputs": {
+    "json": {
+      "type": "string",
+      "description": "JSON string to validate",
+      "required": true
+    },
+    "schema": {
+      "type": "object",
+      "description": "JSON Schema to validate against",
+      "required": false
+    }
+  },
+  "outputs": {
+    "valid": {
+      "type": "boolean",
+      "description": "Whether the JSON is valid"
+    },
+    "errors": {
+      "type": "array",
+      "description": "List of validation errors"
+    }
+  }
+}

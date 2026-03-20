@@ -1,0 +1,32 @@
+{
+  "id": "data-summarizer",
+  "name": "Data Summarizer",
+  "version": "1.0.0",
+  "description": "Summarizes large datasets and documents into concise insights",
+  "author": "ResonantGenesis",
+  "category": "data",
+  "tags": ["data", "summarization", "insights"],
+  "capabilities": ["text-generation", "data-processing"],
+  "pricing": {
+    "credits_per_run": 30
+  },
+  "inputs": {
+    "data": {
+      "type": "string",
+      "description": "Data or text to summarize",
+      "required": true
+    },
+    "max_length": {
+      "type": "integer",
+      "description": "Maximum summary length",
+      "required": false,
+      "default": 500
+    }
+  },
+  "outputs": {
+    "summary": {
+      "type": "string",
+      "description": "Summarized content"
+    }
+  }
+}

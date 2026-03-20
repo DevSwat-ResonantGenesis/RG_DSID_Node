@@ -1,0 +1,32 @@
+{
+  "id": "research-assistant",
+  "name": "Research Assistant",
+  "version": "1.0.0",
+  "description": "Helps with research by finding, organizing, and synthesizing information",
+  "author": "ResonantGenesis",
+  "category": "research",
+  "tags": ["research", "information", "synthesis"],
+  "capabilities": ["text-generation", "web-search", "reasoning"],
+  "pricing": {
+    "credits_per_run": 75
+  },
+  "inputs": {
+    "query": {
+      "type": "string",
+      "description": "Research query or topic",
+      "required": true
+    },
+    "depth": {
+      "type": "string",
+      "description": "Research depth: quick, standard, deep",
+      "required": false,
+      "default": "standard"
+    }
+  },
+  "outputs": {
+    "findings": {
+      "type": "object",
+      "description": "Research findings and sources"
+    }
+  }
+}

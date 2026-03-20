@@ -1,0 +1,32 @@
+{
+  "id": "code-analyzer",
+  "name": "Code Analyzer",
+  "version": "1.0.0",
+  "description": "Analyzes code for quality, complexity, and potential issues",
+  "author": "ResonantGenesis",
+  "category": "development",
+  "tags": ["code", "analysis", "quality"],
+  "capabilities": ["code-analysis", "text-generation"],
+  "pricing": {
+    "credits_per_run": 50
+  },
+  "inputs": {
+    "code": {
+      "type": "string",
+      "description": "Code to analyze",
+      "required": true
+    },
+    "language": {
+      "type": "string",
+      "description": "Programming language",
+      "required": false,
+      "default": "auto"
+    }
+  },
+  "outputs": {
+    "analysis": {
+      "type": "object",
+      "description": "Code analysis results"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+# ResonantGenesis Node Configuration
+
+node:
+  # Node operation mode: runtime, index, storage, gateway, full
+  mode: full
+  # Data directory for node storage
+  data_dir: ./data
+
+chain:
+  # Chain RPC URL
+  rpc: https://base-sepolia.g.alchemy.com/v2/RmpqkQUujfXsNTjVyiv85
+  # Contract addresses (deployed Dec 16, 2025)
+  contracts:
+    identity: "0xf9Fb725db383F524021C3D006a70381EAAEF85d5"
+    agents: "0x10E3079926f6C5790228d0e5f164E506AE96F3Ea"
+    anchors: "0x12352f8c6790C1DA5b835CeB7111faC5eE3448aF"
+
+storage:
+  # IPFS gateway for fetching content
+  ipfs_gateway: https://ipfs.io/ipfs/
+  # IPFS API for uploading (optional)
+  ipfs_api: null
+  # Local cache settings
+  cache:
+    enabled: true
+    max_size_mb: 1000
+
+runtime:
+  # Maximum concurrent agent executions
+  max_concurrent: 10
+  # Default execution timeout (seconds)
+  default_timeout: 300
+  # Enable sandboxing
+  sandbox_enabled: true
+  # Sandbox settings
+  sandbox:
+    max_memory_mb: 512
+    network_enabled: false
+
+api:
+  # API server host
+  host: 0.0.0.0
+  # API server port
+  port: 8080
+  # CORS origins
+  cors_origins:
+    - "*"
+  # Rate limiting
+  rate_limit:
+    requests_per_minute: 100
+
+metrics:
+  # Enable Prometheus metrics
+  enabled: true
+  # Metrics port
+  port: 9090
+
+logging:
+  # Log level: DEBUG, INFO, WARNING, ERROR
+  level: INFO
+  # Log format
+  format: "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
