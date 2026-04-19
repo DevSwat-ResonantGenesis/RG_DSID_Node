@@ -10,7 +10,7 @@
 
 > **Not to be confused with:**
 > - **RG_DSID_Blockchain** — Internal platform blockchain (DSID-P ledger, audit chain, port 8000)
-> - **RG_external_blockchain** — External chain bridges (Raft consensus, block production)
+> - **RG_TrainingNet_Chain** — Training network chain (Raft consensus, block production)
 
 ## Features
 - Agent execution runtime with governance decisions
