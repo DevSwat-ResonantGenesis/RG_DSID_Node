@@ -1,26 +1,35 @@
-# RG Blockchain Node
+# RG_DSID_Node
 
-> **Part of the [ResonantGenesis](https://dev-swat.com) platform** — JavaScript blockchain node for DSID anchoring and transaction validation.
+> **Part of the [DevSwat](https://dev-swat.com) platform** — External decentralized node runtime for agent execution, DSID anchoring on Base Sepolia, and P2P networking.
 
-[![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen.svg)]()
+[![Status: Restored](https://img.shields.io/badge/Status-Restored-yellow.svg)]()
 [![Port: 8081](https://img.shields.io/badge/Port-8081-orange.svg)]()
 [![License: RG Source Available](https://img.shields.io/badge/License-RG%20Source%20Available-blue.svg)](LICENSE.txt)
 
+**External** decentralized P2P node. Runs agents on-chain, indexes Base Sepolia data, manages IPFS storage, and provides sandboxed agent execution with governance.
+
+> **Not to be confused with:**
+> - **RG_DSID_Blockchain** — Internal platform blockchain (DSID-P ledger, audit chain, port 8000)
+> - **RG_external_blockchain** — External chain bridges (Raft consensus, block production)
+
 ## Features
-- Block mining and chain validation
-- DSID (Digital Soul Identity) anchoring
-- Transaction graph management
+- Agent execution runtime with governance decisions
+- DSID anchoring on Base Sepolia (real L2)
+- Chain indexing and transaction validation
+- IPFS content storage
+- Sandboxed agent execution
+- CLI tools: `resonant-node`, `resonant-agent`, `resonant-key`
 - REST API on port 8081
 
 ## Quick Start
 ```bash
-npm install
-node server.js
+pip install -e .
+resonant-node --help
 ```
 
 ## Deployment
-- **Container**: `blockchain_node` | **Port**: 8081
-- **Server path**: `/home/deploy/RG_Blockchain_Node`
+- **Container**: `dsid_node` | **Port**: 8081
+- **Server path**: `/home/deploy/RG_DSID_Node`
 
 ---
 **Organization**: [DevSwat-ResonantGenesis](https://github.com/DevSwat-ResonantGenesis) | **Platform**: [dev-swat.com](https://dev-swat.com)
