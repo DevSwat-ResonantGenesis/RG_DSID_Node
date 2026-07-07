@@ -56,7 +56,7 @@ class NodeConfig:
         # Security settings
         self.allowed_origins: list = os.getenv(
             "NODE_ALLOWED_ORIGINS", 
-            "https://dev-swat.com,https://www.dev-swat.com,https://api.dev-swat.com"
+            "https://resonant.dev-swat.com,https://www.resonant.dev-swat.com,https://api.resonant.dev-swat.com"
         ).split(",")
         
         # Rate limiting

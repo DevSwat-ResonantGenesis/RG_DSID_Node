@@ -1,6 +1,6 @@
 # RG_DSID_Node
 
-> **Part of the [DevSwat](https://dev-swat.com) platform** — External decentralized node runtime for agent execution, DSID anchoring on Base Sepolia, and P2P networking.
+> **Part of the [DevSwat](https://resonant.dev-swat.com) platform** — External decentralized node runtime for agent execution, DSID anchoring on Base Sepolia, and P2P networking.
 
 [![Status: Restored](https://img.shields.io/badge/Status-Restored-yellow.svg)]()
 [![Port: 8081](https://img.shields.io/badge/Port-8081-orange.svg)]()
@@ -32,4 +32,4 @@ resonant-node --help
 - **Server path**: `/home/deploy/RG_DSID_Node`
 
 ---
-**Organization**: [DevSwat-ResonantGenesis](https://github.com/DevSwat-ResonantGenesis) | **Platform**: [dev-swat.com](https://dev-swat.com)
+**Organization**: [DevSwat-ResonantGenesis](https://github.com/DevSwat-ResonantGenesis) | **Platform**: [resonant.dev-swat.com](https://resonant.dev-swat.com)
